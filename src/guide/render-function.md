@@ -53,7 +53,7 @@ app.component('anchored-heading', {
 })
 ```
 
-This template doesn't feel great. It's not only verbose, but we're duplicating `<slot></slot>` for every heading level. And when we add the anchor element, we have to again duplicate it in every `v-if/v-else-if` branch.
+This template doesn't feel great. It's not only verbose, but we're duplicating `<slot></slot>` for every heading level. And when we add the anchor element, we have to duplicate it again in every `v-if/v-else-if` branch.
 
 While templates work great for most components, it's clear that this isn't one of them. So let's try rewriting it with a `render()` function:
 
@@ -327,7 +327,7 @@ For all other event and key modifiers, no special API is necessary, because we c
 | `.stop`                                               | `event.stopPropagation()`                                                                                            |
 | `.prevent`                                            | `event.preventDefault()`                                                                                             |
 | `.self`                                               | `if (event.target !== event.currentTarget) return`                                                                   |
-| Keys:<br>`.enter`, `.13`                              | `if (event.keyCode !== 13) return` (change `13` to [another key code](http://keycode.info/) for other key modifiers) |
+| Keys:<br>`.enter`, `.13`                              | `if (event.keyCode !== 13) return` (change `13` to [another key code](https://keycode.info/) for other key modifiers) |
 | Modifiers Keys:<br>`.ctrl`, `.alt`, `.shift`, `.meta` | `if (!event.ctrlKey) return` (change `ctrlKey` to `altKey`, `shiftKey`, or `metaKey`, respectively)                  |
 
 Here's an example with all of these modifiers used together:

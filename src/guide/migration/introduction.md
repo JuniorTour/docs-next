@@ -4,7 +4,7 @@
 
 We're glad you asked! The answer is no. We've gone to great lengths to ensure most of the API is the same and the core concepts haven't changed. It's long because we like to offer very detailed explanations and include a lot of examples. Rest assured, **this is not something you have to read from top to bottom!**
 
-Possibly the biggest change is our new [Composition API](/guide/composition-api-introduction.html), which is entirely additive- the previous Options API will continue to be supported, as the Composition API is an advanced feature.
+Possibly the biggest change is our new [Composition API](/guide/composition-api-introduction.html), which is entirely additive. The previous Options API will continue to be supported, as the Composition API is an advanced feature.
 
 ## Overview
 
